@@ -3,6 +3,7 @@
   "private": true,
   "homepage": "https://bryangm.com",
   "version": "1.0.0",
+  "author": "Bryan Garcia Munive",
   "type": "module",
   "scripts": {
     "dev": "vite",

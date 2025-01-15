@@ -32,7 +32,7 @@ Bienvenido a mi portafolio profesional. Este proyecto muestra mi experiencia en 
 
 1. **Clonar el repositorio:**
    ```bash
-   git clone https://github.com/bryan56gm/bryan56gm.github.io.git
+   git clone https://github.com/bryan56gm/portfolio.git
    
 2. **Moverse al directorio del proyecto:**
    ```bash
@@ -52,8 +52,4 @@ Bienvenido a mi portafolio profesional. Este proyecto muestra mi experiencia en 
    ```bash
    pnpm run
    
-3. **Publicar el proyecto:**
-   ```bash
-   npm run deploy
-
-![Portfolio](https://raw.githubusercontent.com/bryan56gm/bryan56gm.github.io/main/preview.jpg)
+![Portfolio](https://raw.githubusercontent.com/bryan56gm/portfolio/refs/heads/main/preview.jpg)

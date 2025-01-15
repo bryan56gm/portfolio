@@ -48,7 +48,7 @@ const Project = () => {
       title: 'Portfolio Developer',
       text: projects?.frontend.portfolioDeveloper,
       src: 'portfolio-developer',
-      githubLink: 'https://github.com/bryan56gm/bryan56gm.github.io',
+      githubLink: 'https://github.com/bryan56gm/portfolio',
       internetLink: 'https://bryangm.com/'
     }
   ]
