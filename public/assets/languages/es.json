@@ -72,9 +72,12 @@
         "developer": "Programación",
         "designer": "Diseño",
         "name": "Nombre",
+        "errorName": "Debes introducir al menos 3 caracteres",
         "mail": "Correo",
+        "errorMail": "Correo electrónico inválido",
         "subject": "Asunto",
         "message": "Mensaje",
+        "errorMessage": "El mensaje no puede estar vacío",
         "button": "Enviar"
     },
 

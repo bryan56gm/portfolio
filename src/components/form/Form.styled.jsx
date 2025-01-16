@@ -3,77 +3,74 @@ import styled from 'styled-components'
 // Responsive
 import device from '../../styles/responsive/breakpoints'
 
-const FormLetter = styled.div`
-    background-image: url('/assets/icons/letter-mb.svg');
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 100% auto;
-    min-height: 550px;
-    max-width: 350px;
-    width: 100%;
+const FormContent = styled.div`
+    width: 85%;
+    max-width: 550px;
     margin-inline: auto;
-    
-    ${device.laptop`
-        background-image: url('/assets/icons/letter-lp.svg');
-        width: 100%;
-        height: auto;
-        min-height: auto;
-        max-width: 100%;
-        margin-top: 3rem;
+    border: 3px solid #fff;
+    border-bottom: none;
+    border-radius: 10px;
+    padding-block: 1.2rem;
+    margin-bottom: 60%;
+    position: relative;
+    ${device.tablet`
+        margin-bottom: 40%;
+        padding-block: 1.5rem;
     `}
-
-    @media screen and (max-width: 390px) {
-        background-size: 112%;
-        min-height: 600px; 
-        max-width: 450px;
-    }
 `
-
-const FormContent = styled.form`
-    width: 75%;
-    max-width: 220px;
+const FormLetter = styled.img`
+        position: absolute;
+        top: 92%;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 140%;
+        ${device.tablet`
+        top: 83%;
+    `}
+`
+const FormElement = styled.form`
+    width: 85%;
     margin-inline: auto;
-    padding-top: 2rem;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: .6rem;
-
-    @media screen and (max-width: 390px) {
-        max-width: 270px;
-    }
-
-    ${device.laptop`
-        max-width: 450px;
-        padding-top: 2.5rem;
-        row-gap: 1.3rem;
-    `}
+    row-gap: 1.5rem;
 
     & button{
         width: 100%;
         max-width: 60%;
         padding-block: 10px;
-        ${device.laptop`
-            padding-block: 15px
-        `}
+        padding-block: 15px;
+        margin-top: 1.2rem;
     }
 `
 
 const FormField = styled.div`
     width: 100%;
+    position: relative;
+`
+const FormLabel = styled.label`
+    margin-bottom: .3rem;
+    display: block;
+    font-size: clamp(14px, 1.5vw, 16px);
 `
 
 const FormInput = styled.input`
     background-color: transparent;
-    border: 1px solid white;
+    border: 1px solid #dfdfdff0;
     width: 100%;
-    color: white;
-    padding-left: 0.5rem;
+    color: #dfdfdff0;
+    padding: 0.25rem 0.5rem;
+    border-color: ${({ $error }) => $error ? 'red' : '#dfdfdff0'};
 `
-const FormLabel = styled.label`
-    margin-bottom: .5rem;
-    display: block;
+const FormError = styled.span`
+        color: #c74242;
+        font-size: 12px;
+        font-style: italic;
+        position: absolute;
+        left: 0;
+        top: 107%;
 `
 
 const FormTextArea = styled.textarea`
@@ -84,17 +81,12 @@ const FormTextArea = styled.textarea`
     width: 100%;
     color: white;
     padding-left: 0.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
+    border-color: ${({ $error }) => $error ? 'red' : 'white'};
 
-
-    @media screen and (min-width: 390px) {
-        margin-bottom: 0;
-        max-height: 90px;
+    & + span{
+        top: 100%;
     }
-
-    ${device.laptop`
-        max-height: 120px;
-    `}
 `
 
-export { FormLetter, FormContent, FormField, FormLabel, FormInput, FormTextArea }
+export { FormContent, FormElement, FormField, FormLabel, FormInput, FormError, FormTextArea, FormLetter }

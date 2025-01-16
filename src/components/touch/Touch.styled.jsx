@@ -12,7 +12,7 @@ const Touch = styled(Section)`
   gap: 4rem 3rem;
   padding-bottom: 0;
   margin-bottom: 30px;
-  min-height: calc(100vh - var(--header-height));
+  /* min-height: calc(100vh - var(--header-height)); */
 
   ${device.laptop`
     flex-direction: row-reverse;

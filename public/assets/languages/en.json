@@ -72,9 +72,12 @@
         "developer": "Programming",
         "designer": "Design",
         "name": "Name",
+        "errorName": "You must enter at least 3 characters",
         "mail": "Email",
+        "errorMail": "Invalid email",
         "subject": "Subject",
         "message": "Message",
+        "errorMessage": "The message cannot be empty",
         "button": "Send"
     },
 
