@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 // Validation
 import { validateEmail } from '../utils/validation'
 
@@ -32,6 +32,12 @@ const useForm = ({ contact }) => {
     setErrors(newErrors)
     return Object.keys(newErrors).length === 0
   }
+
+  useEffect(() => {
+    if (Object.keys(errors).length !== 0) {
+      validateFields()
+    }
+  }, [contact])
 
   return { fields, errors, updateFields, validateFields }
 }
