@@ -11,12 +11,12 @@ const ColorsStyled = css`
 
     body.dark{
         --body-color: hsl(19, 12%, 8%);
+        position: relative;
     }
 
     body.dark::after{
         content: "";
         position: absolute;
-        z-index: -1;
         inset: 0;
         background-image: url('/assets/img/noisy.webp');
         pointer-events: none;

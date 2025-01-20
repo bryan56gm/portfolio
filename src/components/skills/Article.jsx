@@ -2,7 +2,7 @@ import React from 'react'
 // ShortID
 import { generate as id } from 'shortid'
 // Styled Components
-import { ArticleTitle, ArticleList, ArticleIcon, ArticleIconContainer } from './Article.styled'
+import { ArticleTitle, ArticleList, ArticleIconContainer, ArticleIcon, ArticleTooltip } from './Article.styled'
 
 const Article = ({ title, images }) => {
   const iconshadowColors = {
@@ -36,6 +36,7 @@ const Article = ({ title, images }) => {
           <li key={id()}>
             <ArticleIconContainer $shadowcolor={iconshadowColors[image]}>
               <ArticleIcon src={`/assets/icons/${image}.svg`} alt={`Icon ${image}`} />
+              <ArticleTooltip>{image}</ArticleTooltip>
             </ArticleIconContainer>
           </li>
         ))}
