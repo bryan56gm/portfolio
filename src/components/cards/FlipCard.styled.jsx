@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import device from '../../styles/responsive/breakpoints'
 
 const FlipCardContainer = styled.article`
     position: relative;
@@ -8,6 +9,11 @@ const FlipCardContainer = styled.article`
     height: 65vw;
     overflow: hidden;
     border-radius: 20px;
+    box-shadow: 0 8px 32px -4px rgba(0, 0, 0, 0.5), 0 4px 12px -2px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.3s ease;
+    &:hover{
+        box-shadow: 0 12px 40px -4px rgba(0, 0, 0, 0.6), 0 6px 16px -2px rgba(0, 0, 0, 0.75);
+    }
 `
 
 const FlipCardBox = styled.div`
@@ -40,9 +46,13 @@ const FlipCardBack = styled.div`
     transform: rotateY(180deg);
     padding: 1.5rem 2rem;
 
-    display: flex; /* Añadir flex para usar flex-grow */
-    flex-direction: column; /* Asegura que los elementos hijos se apilen verticalmente */
+    display: flex; 
+    flex-direction: column; 
     gap: 1rem;
+
+    & img{
+        width: 16px;
+    }
 `
 
 const FlipCardImg = styled.img`
@@ -74,6 +84,9 @@ const FlipCardIcons = styled.div`
     top: 0;
     display: flex;
     gap: 1rem;
+    ${device.tablet`
+        padding: 15px 20px;
+    `}
 `
 
 const FlipCardIcon = styled.img`
@@ -84,36 +97,30 @@ const FlipCardIcon = styled.img`
 const FlipCarText = styled.p`
     display: grid;
     align-items: center;
-    flex-grow: 1; /* Permitir que el p crezca para ocupar el espacio disponible */
-    overflow-y: auto; /* Cambiar a auto para permitir el desplazamiento solo si es necesario */
-    margin: 0; /* Asegurarse de que no haya márgenes que afecten el scroll */
+    flex-grow: 1; 
+    overflow-y: auto; 
+    margin: 0; 
 
-    /* Firefox */
-    scrollbar-width: thin; /* Grosor del scrollbar */
-        scrollbar-color: rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.1); /* Color del pulgar y pista */
-    /* Edge and IE */
-        -ms-overflow-style: -ms-autohiding-scrollbar; /* Barra de desplazamiento de auto-ocultamiento */
+    scrollbar-width: thin; 
+    scrollbar-color: rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.1); 
+    -ms-overflow-style: -ms-autohiding-scrollbar; 
         
-    /* Webkit Browsers (Chrome, Safari, etc.) */
     &::-webkit-scrollbar {
-        width: 8px; /* Ancho de la barra de desplazamiento */
+        width: 8px; 
     }
 
     &::-webkit-scrollbar-thumb {
-        background-color: rgba(0, 0, 0, 0.2); /* Color de la barra de desplazamiento */
-        border-radius: 4px; /* Bordes redondeados */
+        background-color: rgba(0, 0, 0, 0.2); 
+        border-radius: 4px; 
     }
 
     &::-webkit-scrollbar-thumb:hover {
-        background-color: rgba(0, 0, 0, 0.3); /* Color al pasar el cursor */
+        background-color: rgba(0, 0, 0, 0.3); 
     }
 
     &::-webkit-scrollbar-track {
-        background-color: rgba(0, 0, 0, 0.1); /* Color del fondo de la pista */
+        background-color: rgba(0, 0, 0, 0.1); 
     }
-
-    
-    
 `
 
 export { FlipCardContainer, FlipCardBox, FlipCardFront, FlipCardBack, FlipCardImg, FlipCardTitle, FlipCardIcons, FlipCardIcon, FlipCarText }

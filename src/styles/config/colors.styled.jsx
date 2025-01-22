@@ -21,6 +21,10 @@ const ColorsStyled = css`
         background-image: url('/assets/img/noisy.webp');
         pointer-events: none;
         user-select: none;
+        
+        @media screen and (max-width: 568px){
+            opacity: .6;
+        }
     }
 `
 

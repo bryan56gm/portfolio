@@ -8,9 +8,12 @@ import AboutButtons from '../components/aboutButtons/AboutButtons'
 import { Helmet } from 'react-helmet'
 // Context
 import { LanguageContext } from '../contexts/LanguageContext'
+// Hook Scroll Reveal
+import { useAboutScrollReveal } from '../hooks/useScrollReveal'
 
 const About = () => {
   const { languageData: { title } } = useContext(LanguageContext)
+  useAboutScrollReveal()
 
   const dynamicContentRef = useRef(null)
   const [selectedComponent, setSelectedComponent] = useState(null)

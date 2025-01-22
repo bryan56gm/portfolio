@@ -5,9 +5,12 @@ import Project from '../components/project/Project'
 import { Helmet } from 'react-helmet'
 // Language Context
 import { LanguageContext } from '../contexts/LanguageContext'
+// Hook Scroll Reveal
+import { useProjectsScrollReveal } from '../hooks/useScrollReveal'
 
 const Projects = () => {
   const { languageData: { title } } = useContext(LanguageContext)
+  useProjectsScrollReveal()
 
   return (
     <>

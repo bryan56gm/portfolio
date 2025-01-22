@@ -5,13 +5,17 @@ import { ArticleBox, ArticleTitle, ArticleText, ArticleTime, ArticleTimeSpan } f
 const Article = ({ link, title, duration, time, text }) => {
   return (
     <ArticleBox>
-      <a href={link} target='_blank' rel='noopener noreferrer'>
-        <ArticleTitle>{title}</ArticleTitle>
-      </a>
+      <h3>
+        <ArticleTitle href={link} target='_blank' rel='noopener noreferrer'>
+          {title}
+        </ArticleTitle>
+      </h3>
+
       <ArticleTime>
-        <ArticleTimeSpan>{duration} </ArticleTimeSpan>
+        <ArticleTimeSpan>{duration}</ArticleTimeSpan>
         {time}
       </ArticleTime>
+
       <ArticleText>{text}</ArticleText>
     </ArticleBox>
   )

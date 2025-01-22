@@ -25,7 +25,7 @@ const HeroAvatar = styled.img`
     height: 100vw;
     max-height: 380px;
     filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
-    animation: floating ease-in-out 4s infinite;
+    /* animation: floating ease-in-out 4s infinite; */
     ${device.laptop`
         max-height: 450px;
     `}

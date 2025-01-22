@@ -17,6 +17,7 @@
     "react-helmet": "^6.1.0",
     "react-responsive": "^10.0.0",
     "react-router-dom": "^7.0.2",
+    "scrollreveal": "^4.0.9",
     "shortid": "^2.2.16",
     "styled-components": "^6.1.13",
     "swiper": "^11.1.15"

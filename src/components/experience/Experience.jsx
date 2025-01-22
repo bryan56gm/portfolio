@@ -5,6 +5,7 @@ import { generate as id } from 'shortid'
 import { Section, SectionTitleH2 } from '../../styles/base/Section.styled'
 import { Container } from '../../styles/base/Container.styled'
 // Components
+import { ExperienceArticles } from './Experience.styled'
 import Article from './Article'
 // Context
 import { LanguageContext } from '../../contexts/LanguageContext'
@@ -37,17 +38,19 @@ const Experience = () => {
     <Section>
       <Container>
         <SectionTitleH2>{experience?.title}</SectionTitleH2>
-        {articles.map((article) => (
-          <Article
-            key={id()}
-            title={article.title}
-            link={article.link}
-            duration={experience?.duration}
-            time={article.time}
-            text={article.text}
-          />
-        ))}
 
+        <ExperienceArticles>
+          {articles.map((article) => (
+            <Article
+              key={id()}
+              title={article.title}
+              link={article.link}
+              duration={experience?.duration}
+              time={article.time}
+              text={article.text}
+            />
+          ))}
+        </ExperienceArticles>
       </Container>
     </Section>
   )

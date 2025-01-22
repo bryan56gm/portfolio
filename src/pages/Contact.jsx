@@ -8,9 +8,12 @@ import { Helmet } from 'react-helmet'
 import { Touch } from '../components/touch/Touch.styled'
 // Language Context
 import { LanguageContext } from '../contexts/LanguageContext'
+// Hook Scroll Reveal
+import { useContactScrollReveal } from '../hooks/useScrollReveal'
 
 const Contact = () => {
   const { languageData: { title } } = useContext(LanguageContext)
+  useContactScrollReveal()
 
   return (
     <>

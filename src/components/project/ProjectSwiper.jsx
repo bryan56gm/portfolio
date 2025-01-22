@@ -14,9 +14,9 @@ import './project-swiper.css' // SwiperJS custom styles CSS
 // ID generator
 import { generate as id } from 'shortid'
 
-const ProjectSwiper = ({ title, projects }) => {
+const ProjectSwiper = ({ title, projects, className }) => {
   return (
-    <section>
+    <section className={className}>
       <ProjectTitle>{title}</ProjectTitle>
 
       <Swiper

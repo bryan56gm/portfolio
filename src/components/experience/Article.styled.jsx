@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const ArticleBox = styled.div`
+const ArticleBox = styled.article`
     display: grid;
     row-gap: .5rem;
     border-bottom: 1px dashed var(--first-color);
@@ -15,7 +15,7 @@ const ArticleBox = styled.div`
     }
 `
 
-const ArticleTitle = styled.h3`
+const ArticleTitle = styled.a`
     color: var(--first-color);
     font-weight: 600;
     font-size: 1.3rem;

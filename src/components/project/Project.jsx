@@ -3,9 +3,9 @@ import React, { useContext } from 'react'
 import { LanguageContext } from '../../contexts/LanguageContext'
 // Styled Components
 import { Section, SectionTitleH1 } from '../../styles/base/Section.styled'
-import { Container } from '../../styles/base/Container.styled'
 // Components
 import ProjectSwiper from './ProjectSwiper'
+import { ProjectContainer } from './Project.styled'
 
 const Project = () => {
   const { languageData: { projects }, isLoading } = useContext(LanguageContext)
@@ -50,6 +50,13 @@ const Project = () => {
       src: 'portfolio-developer',
       githubLink: 'https://github.com/bryan56gm/portfolio',
       internetLink: 'https://bryangm.com/'
+    },
+    {
+      title: 'Ascend Animation',
+      text: projects?.frontend.ascend,
+      src: 'ascend',
+      githubLink: 'https://github.com/bryan56gm/ascend',
+      internetLink: 'https://ascend-beta.vercel.app/'
     }
   ]
 
@@ -95,10 +102,11 @@ const Project = () => {
     !isLoading &&
       <Section>
         <SectionTitleH1>{projects?.title}</SectionTitleH1>
-        <Container>
-          <ProjectSwiper title='Frontend' projects={htmlProjects} />
-          <ProjectSwiper title='Backend' projects={cssProjects} />
-        </Container>
+
+        <ProjectContainer>
+          <ProjectSwiper className='project__frontend' title='Frontend' projects={htmlProjects} />
+          <ProjectSwiper className='project__backend' title='Backend' projects={cssProjects} />
+        </ProjectContainer>
       </Section>
 
   )

@@ -18,7 +18,7 @@ const Form = () => {
   }
 
   return (
-    <FormContent>
+    <FormContent className='form__content'>
       <FormLetter src='/assets/icons/form-letter.svg' />
 
       <FormElement

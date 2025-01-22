@@ -8,8 +8,9 @@ const SectionTitle = css`
     font-size: clamp(25px, 3vw, 32px);
     font-family: 'Code7x5', sans-serif;
     font-weight: bold;
-    margin-bottom: 30px;
     text-align: center;
+    margin-bottom: 50px;
+    
 `
 
 const SectionTitleH1 = styled.h1`

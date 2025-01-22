@@ -13,8 +13,8 @@ const Description = () => {
     <Section>
       <Container>
         <SectionTitleH1>{description?.title}</SectionTitleH1>
-        <DescriptionText>{description?.text1}</DescriptionText>
-        <DescriptionText>{description?.text2}</DescriptionText>
+        <DescriptionText className='description__text'>{description?.text1}</DescriptionText>
+        <DescriptionText className='description__text'>{description?.text2}</DescriptionText>
       </Container>
     </Section>
   )

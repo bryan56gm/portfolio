@@ -13,15 +13,16 @@ const ButtonBox = styled.button`
     font-weight: bold;
     border: 2px solid black;
     transition: transform .7s;
-    box-shadow: 0 4px 1px -1px #FD7E62;
     color: #000000;
+    box-shadow: 0 4px 1px -1px #FD7E62, 0 10px 16px -4px rgba(0, 0, 0, 0.55);
+    transition: transform 0.7s, box-shadow 0.7s;
     ${device.laptop`
         font-size: 16px;
         padding-right: 3.8rem;
     `}
     
     &:hover{
-        box-shadow: 0 4px 1px -1px #f3502c;
+        box-shadow: 0 4px 1px -1px #f3502c, 0 12px 24px -4px rgba(0, 0, 0, 0.75);
         transform: translateY(-0.3rem);
     }
 `

@@ -14,14 +14,15 @@ const Hero = () => {
     <Section>
       <HeroContainer>
         <HeroAvatar
+          className='hero__avatar'
           src='/assets/img/avatar.webp'
           alt='Personal avatar profile'
         />
 
         <HeroData>
-          <HeroTitle>Bryan Garcia Munive</HeroTitle>
-          <HeroSubtitle>{hero?.subtitle}</HeroSubtitle>
-          <HeroText>{hero?.text}</HeroText>
+          <HeroTitle className='hero__title'>Bryan Garcia Munive</HeroTitle>
+          <HeroSubtitle className='hero__subtitle'>{hero?.subtitle}</HeroSubtitle>
+          <HeroText className='hero__text'>{hero?.text}</HeroText>
           <Social />
         </HeroData>
       </HeroContainer>

@@ -19,7 +19,7 @@ const AboutButtons = ({ dynamicContentRef, setSelectedComponent }) => {
   }
 
   return (
-    <ButtonsContainer>
+    <ButtonsContainer className='about__buttons'>
       <Button icon='experience' onClick={() => handleSectionChange('experience')}>
         {buttons?.text1}
       </Button>
