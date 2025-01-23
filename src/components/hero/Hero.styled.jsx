@@ -1,12 +1,17 @@
 // Styled Component
 import styled from 'styled-components'
 import { Container } from '../../styles/base/Container.styled'
-import { SectionTitleH1 } from '../../styles/base/Section.styled'
+import { Section, SectionTitleH1 } from '../../styles/base/Section.styled'
 // Responsive
 import device from '../../styles/responsive/breakpoints'
 // Keyframes
 import '../../styles/keyframes/floating.css'
 
+const HeroSection = styled(Section)`
+    @media screen and (max-height: 600px) {
+        padding-block: 2.5rem 0;
+    }   
+`
 const HeroContainer = styled(Container)`
     display: flex;
     flex-wrap: wrap;
@@ -15,10 +20,12 @@ const HeroContainer = styled(Container)`
     
     ${device.laptop`
         flex-wrap: nowrap;
-        margin-top: 4rem;
         justify-content: space-around;
         align-items: center;
     `}
+    @media screen and (max-height: 600px) {
+        margin-top: 0rem;
+    }
 `
 
 const HeroAvatar = styled.img`
@@ -68,4 +75,4 @@ const HeroText = styled.p`
     `}
 `
 
-export { HeroContainer, HeroAvatar, HeroData, HeroTitle, HeroSubtitle, HeroText }
+export { HeroSection, HeroContainer, HeroAvatar, HeroData, HeroTitle, HeroSubtitle, HeroText }

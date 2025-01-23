@@ -1,7 +1,6 @@
 import React, { useContext } from 'react'
 // Styled Components
-import { Section } from '../../styles/base/Section.styled'
-import { HeroContainer, HeroAvatar, HeroData, HeroTitle, HeroSubtitle, HeroText } from './Hero.styled'
+import { HeroSection, HeroContainer, HeroAvatar, HeroData, HeroTitle, HeroSubtitle, HeroText } from './Hero.styled'
 // Components
 import Social from '../social/Social'
 // Language Context
@@ -11,7 +10,7 @@ const Hero = () => {
   const { languageData: { hero } } = useContext(LanguageContext)
 
   return (
-    <Section>
+    <HeroSection>
       <HeroContainer>
         <HeroAvatar
           className='hero__avatar'
@@ -26,7 +25,7 @@ const Hero = () => {
           <Social />
         </HeroData>
       </HeroContainer>
-    </Section>
+    </HeroSection>
   )
 }
 

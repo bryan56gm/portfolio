@@ -56,7 +56,7 @@ const Project = () => {
       text: projects?.frontend.ascend,
       src: 'ascend',
       githubLink: 'https://github.com/bryan56gm/ascend',
-      internetLink: 'https://ascend-beta.vercel.app/'
+      internetLink: 'https://bryan56gm.github.io/ascend/'
     }
   ]
 
