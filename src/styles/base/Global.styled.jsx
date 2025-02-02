@@ -1,12 +1,14 @@
 // Styled Component
 import { createGlobalStyle } from 'styled-components'
 // Config Styled Component
-import { ColorsStyled } from '../config/colors.styled'
-import { SizesStyled } from '../config/sizes.styled'
+import { ColorsStyled } from '../config/Colors.styled'
+import { SizesStyled } from '../config/Sizes.styled'
+import { ScrollbarStyled } from '../config/Scrollbar.styled'
 
 const GlobalStyles = createGlobalStyle`
     ${ColorsStyled}
     ${SizesStyled}
+    ${ScrollbarStyled}
 
     @font-face {
         font-family: 'Code7x5';
