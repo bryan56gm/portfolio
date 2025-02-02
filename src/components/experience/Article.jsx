@@ -2,7 +2,9 @@ import React from 'react'
 // Styled Component
 import { ArticleBox, ArticleTitle, ArticleText, ArticleTime, ArticleTimeSpan } from './Article.styled'
 
-const Article = ({ link, title, duration, time, text }) => {
+const Article = ({ data }) => {
+  const { title, link, duration, time, text } = data
+
   return (
     <ArticleBox>
       <h3>

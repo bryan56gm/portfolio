@@ -9,30 +9,12 @@ import { ExperienceArticles } from './Experience.styled'
 import Article from './Article'
 // Context
 import { LanguageContext } from '../../contexts/LanguageContext'
+// Utils
+import { getExperienceArticles } from '../../utils/experienceData'
 
 const Experience = () => {
   const { languageData: { experience } } = useContext(LanguageContext)
-
-  const articles = [
-    {
-      title: 'Kreisel Events',
-      link: 'https://www.kreiselevents.com/',
-      time: `4 ${experience?.months} - 2024`,
-      text: experience?.text1
-    },
-    {
-      title: 'Giriga comida Fusión',
-      link: 'https://bryan56gm.github.io/giriga/',
-      time: `2 ${experience?.months} - 2023`,
-      text: experience?.text2
-    },
-    {
-      title: 'Garcinstal Multiservices LTD',
-      link: 'https://www.garcinstal.com/',
-      time: `3 ${experience?.months} - 2023`,
-      text: experience?.text3
-    }
-  ]
+  const articles = getExperienceArticles(experience)
 
   return (
     <Section>
@@ -43,11 +25,7 @@ const Experience = () => {
           {articles.map((article) => (
             <Article
               key={id()}
-              title={article.title}
-              link={article.link}
-              duration={experience?.duration}
-              time={article.time}
-              text={article.text}
+              data={article}
             />
           ))}
         </ExperienceArticles>
