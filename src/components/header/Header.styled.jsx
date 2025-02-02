@@ -5,7 +5,7 @@ import { Container } from '../../styles/base/Container.styled'
 import { Link } from 'react-router-dom'
 
 const HeaderBox = styled.header`
-    border-bottom: 2px solid #000;
+    outline: 2px solid #000;
     height: var(--header-height);
 `
 const HeaderContainer = styled(Container)`

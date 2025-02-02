@@ -2,7 +2,7 @@ import { useContext } from 'react'
 // Components
 import NoMatch from '../components/noMatch/NoMatch'
 // React Helmet
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet-async'
 // Language Context
 import { LanguageContext } from '../contexts/LanguageContext'
 

@@ -1,6 +1,7 @@
-import React from 'react'
 // React Router DOM
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+// React Helmet Async
+import { HelmetProvider } from 'react-helmet-async'
 // Normalize
 import './styles/normalize.css'
 // Global Styled Componets
@@ -19,7 +20,7 @@ import { LanguageProvider } from './contexts/LanguageContext'
 
 const App = () => {
   return (
-    <>
+    <HelmetProvider>
       <GlobalStyles />
       <Router>
         <LanguageProvider>
@@ -35,7 +36,7 @@ const App = () => {
           </Routes>
         </LanguageProvider>
       </Router>
-    </>
+    </HelmetProvider>
   )
 }
 

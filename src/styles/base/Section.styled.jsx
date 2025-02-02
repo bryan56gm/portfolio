@@ -1,7 +1,11 @@
 import styled, { css } from 'styled-components'
+import device from '../responsive/breakpoints'
 
 const Section = styled.section`
     padding-block: 3.75rem;
+    ${device.tablet`
+        padding-block: 5.25rem;
+    `}
 `
 const SectionTitle = css`
     color: var(--first-color);

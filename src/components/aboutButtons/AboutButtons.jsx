@@ -6,24 +6,15 @@ import { ButtonsContainer } from './ButtonsContainer.styled'
 // Components
 import Button from '../button/Button'
 
-const AboutButtons = ({ dynamicContentRef, setSelectedComponent }) => {
+const AboutButtons = ({ scrollToSection }) => {
   const { languageData: { buttons } } = useContext(LanguageContext)
-
-  const handleSectionChange = (component) => {
-    const newComponentName = component === 'experience' ? 'experience' : 'skills'
-
-    setSelectedComponent(newComponentName)
-    setTimeout(() => {
-      dynamicContentRef.current.scrollIntoView({ behavior: 'smooth' })
-    }, 0)
-  }
 
   return (
     <ButtonsContainer className='about__buttons'>
-      <Button icon='experience' onClick={() => handleSectionChange('experience')}>
+      <Button icon='experience' onClick={() => scrollToSection('experience')}>
         {buttons?.text1}
       </Button>
-      <Button icon='skills' onClick={() => handleSectionChange('skills')}>
+      <Button icon='skills' onClick={() => scrollToSection('skills')}>
         {buttons?.text2}
       </Button>
     </ButtonsContainer>

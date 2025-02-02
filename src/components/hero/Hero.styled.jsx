@@ -8,9 +8,16 @@ import device from '../../styles/responsive/breakpoints'
 import '../../styles/keyframes/floating.css'
 
 const HeroSection = styled(Section)`
+    ${device.laptop`
+        padding-block: 8rem;
+    `}
+    ${device.desktop`
+        padding-block: 11rem;
+    `}
     @media screen and (max-height: 600px) {
         padding-block: 2.5rem 0;
     }   
+    
 `
 const HeroContainer = styled(Container)`
     display: flex;
@@ -23,9 +30,6 @@ const HeroContainer = styled(Container)`
         justify-content: space-around;
         align-items: center;
     `}
-    @media screen and (max-height: 600px) {
-        margin-top: 0rem;
-    }
 `
 
 const HeroAvatar = styled.img`

@@ -1,17 +1,14 @@
-import React, { useState } from 'react'
-// React-responsive
-import { useMediaQuery } from 'react-responsive'
 // Styled Components
 import { FlipCardContainer, FlipCardBox, FlipCardFront, FlipCardBack, FlipCardImg, FlipCardTitle, FlipCardIcons, FlipCardIcon, FlipCarText } from './FlipCard.styled'
+// Hooks
+import useFlipCard from '../../hooks/useFlipCard'
+// React-responsive
+import { useMediaQuery } from 'react-responsive'
 
 const FlipCard = ({ config }) => {
   const { src, title, githubLink, internetLink, text } = config
-  const [isFlipped, setIsFlipped] = useState(false)
+  const { isFlipped, handleFlipClick } = useFlipCard()
   const isMobile = useMediaQuery({ query: '(max-width: 599px)' })
-
-  const handleFlipClick = () => {
-    setIsFlipped(!isFlipped)
-  }
 
   return (
     <FlipCardContainer>

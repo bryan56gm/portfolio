@@ -1,33 +1,36 @@
-import React, { useState, useRef, useContext } from 'react'
+import { useContext } from 'react'
 // Components
 import Description from '../components/description/Description'
 import Experience from '../components/experience/Experience'
 import Skills from '../components/skills/Skills'
 import AboutButtons from '../components/aboutButtons/AboutButtons'
 // React Helmet
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet-async'
 // Context
 import { LanguageContext } from '../contexts/LanguageContext'
 // Hook Scroll Reveal
 import { useAboutScrollReveal } from '../hooks/useScrollReveal'
+import useScrollToSection from '../hooks/useScrollToSection'
 
 const About = () => {
   const { languageData: { title } } = useContext(LanguageContext)
+  const { dynamicContentRef, selectedComponent, scrollToSection } = useScrollToSection()
   useAboutScrollReveal()
-
-  const dynamicContentRef = useRef(null)
-  const [selectedComponent, setSelectedComponent] = useState(null)
 
   return (
     <>
       <Helmet>
         <title>{title?.about}</title>
+        <link rel='canonical' href='https://bryangm.com/about' />
       </Helmet>
 
       <main>
         <Description />
-        <AboutButtons dynamicContentRef={dynamicContentRef} setSelectedComponent={setSelectedComponent} />
 
+        {/* Dynamic content buttons */}
+        <AboutButtons dynamicContentRef={dynamicContentRef} scrollToSection={scrollToSection} />
+
+        {/* Dynamic content container */}
         <div ref={dynamicContentRef}>
           {selectedComponent === 'experience' && <Experience />}
           {selectedComponent === 'skills' && <Skills />}

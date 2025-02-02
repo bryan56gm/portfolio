@@ -21,7 +21,6 @@ const GlobalStyles = createGlobalStyle`
 
     body {
         background: var(--body-color);
-        /* margin-top: var(--header-height); */
         font-family: 'Roboto', sans-serif;
         font-size: var(--normal-font-size);
         color: var(--text-color);

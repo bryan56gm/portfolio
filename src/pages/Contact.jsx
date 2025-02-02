@@ -3,7 +3,7 @@ import React, { useContext } from 'react'
 import Address from '../components/address/Address'
 import Form from '../components/form/Form'
 // React Helmet
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet-async'
 // Styled Components
 import { Touch } from '../components/touch/Touch.styled'
 // Language Context
@@ -19,6 +19,7 @@ const Contact = () => {
     <>
       <Helmet>
         <title>{title?.contact}</title>
+        <link rel='canonical' href='https://bryangm.com/contact' />
       </Helmet>
 
       <main>
