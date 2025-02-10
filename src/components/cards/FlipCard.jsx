@@ -16,6 +16,7 @@ const FlipCard = ({ config }) => {
 
         <FlipCardFront>
           <FlipCardImg
+            loading='lazy'
             alt={src}
             src={isMobile ? `/assets/img/projects/${src}-mb.webp` : `/assets/img/projects/${src}-lp.webp`}
           />

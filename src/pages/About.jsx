@@ -28,7 +28,7 @@ const About = () => {
         <Description />
 
         {/* Dynamic content buttons */}
-        <AboutButtons dynamicContentRef={dynamicContentRef} scrollToSection={scrollToSection} />
+        <AboutButtons scrollToSection={scrollToSection} />
 
         {/* Dynamic content container */}
         <div ref={dynamicContentRef}>

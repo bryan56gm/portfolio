@@ -15,7 +15,9 @@ const NoFound = () => {
         <title>{title?.notFound}</title>
       </Helmet>
 
-      <NoMatch />
+      <main>
+        <NoMatch />
+      </main>
     </>
   )
 }
