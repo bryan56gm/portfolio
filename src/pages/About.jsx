@@ -27,10 +27,10 @@ const About = () => {
       <main>
         <Description />
 
-        {/* Dynamic content buttons */}
+        {/* Dynamic content Buttons */}
         <AboutButtons scrollToSection={scrollToSection} />
 
-        {/* Dynamic content container */}
+        {/* Dynamic content Container */}
         <div ref={dynamicContentRef}>
           {selectedComponent === 'experience' && <Experience />}
           {selectedComponent === 'skills' && <Skills />}

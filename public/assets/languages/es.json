@@ -14,13 +14,13 @@
 
     "hero": {
         "subtitle": "Desarrollador Web",
-        "text": "Desarrollador front-end, con amplia experiencia en la creación de interfaces de usuario atractivas y funcionales, empleando tecnologías como PUG, SCSS, JavaScript y GULP. Experiencia con React que me permite desarrollar aplicaciones dinámicas y eficientes, logrando una integración armoniosa entre diseño y funcionalidad. Creando soluciones intuitivas y visualmente agradables que mejoran la experiencia del usuario."
+        "text": "Desarrollador especializado en interfaces y arquitecturas web, fusionando diseño y desarrollo para crear productos escalables, intuitivos y visualmente impactantes. Enfocado en optimización, rendimiento y accesibilidad. Explorando siempre nuevas tecnologías y aplicando las mejores prácticas del desarrollo moderno."
     },
 
     "description": {
         "title": "¿Quién soy?",
-        "text1": "Desarrollador web especializado en front-end, con formación en 'Computer Science for Web Programming'. Mis habilidades autodidactas me han permitido trabajar en diversos proyectos, enfocándome en buenas prácticas de programación, SEO y estructuras escalables.",
-        "text2": "Destaco por mi contribución al proyecto 'Garcinstal Multiservices', donde diseñé un prototipo interactivo en Adobe XD, llegando al desarrollo de una página web adaptable con transiciones y efectos visuales avanzados."
+        "text1": "FullStack con experiencia en el diseño de arquitecturas escalables y eficientes, desde microservicios hasta APIs de alto rendimiento. Especializado en soluciones optimizadas para Core Web Vitals, integración CI/CD y entornos de desarrollo ágiles. Aplicando tecnologías como Next.js, Flask y Gulp, en proyectos SPA y SSR, además de arquitecturas serverless para garantizar sistemas sostenibles y adaptables a cualquier carga.",
+        "text2": "Descubre cómo cada detalle está pensado para hacer la diferencia."
     },
 
     "buttons": {

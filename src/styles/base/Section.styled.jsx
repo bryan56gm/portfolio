@@ -14,7 +14,9 @@ const SectionTitle = css`
     font-weight: bold;
     text-align: center;
     margin-bottom: 50px;
-    
+    ${device.tablet`
+        margin-bottom: 65px;
+    `}
 `
 
 const SectionTitleH1 = styled.h1`

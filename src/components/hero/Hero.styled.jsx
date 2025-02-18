@@ -15,7 +15,7 @@ const HeroSection = styled(Section)`
         padding-block: 11rem;
     `}
     @media screen and (max-height: 600px) {
-        padding-block: 2.5rem 0;
+        padding-block: 2.5rem;
     }   
     
 `
@@ -47,7 +47,7 @@ const HeroData = styled.div`
     ${device.laptop`
         text-align: start;
         order: -1;
-        max-width: 850px;
+        max-width: 820px;
     `}
 `
 
