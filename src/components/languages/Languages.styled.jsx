@@ -26,6 +26,7 @@ const LanguageText = styled.span`
 `
 const LanguageList = styled.ul`
     position: absolute;
+    z-index: 100;
     top: 100%;
     background-color: #EDEDEE;
     width: 100%;

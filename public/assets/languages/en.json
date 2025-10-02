@@ -19,8 +19,8 @@
 
     "description": {
         "title": "About me",
-        "text1": "Web developer specializing in front-end, with a background in 'Computer Science for Web Programming'. My self-taught skills have enabled me to work on various projects, focusing on best programming practices, SEO, and scalable structures.",
-        "text2": "I stand out for my contribution to the 'Garcinstal Multiservices' project, where I designed an interactive prototype in Adobe XD, leading to the development of a responsive website with advanced transitions and visual effects."
+        "text1": "Full-Stack Developer with experience in designing scalable and efficient architectures, from microservices to high-performance APIs. Specialized in optimizing Core Web Vitals, integrating CI/CD, and working in agile development environments. Skilled in modern technologies such as React (Vite), Node.js/Express, Prisma, and PostgreSQL, applied in SPA and SSR projects, delivering end-to-end solutions from prototype to production; additionally, experienced in cloud deployments that ensure sustainable and adaptable systems capable of handling any load.",
+        "text2": "Discover how every detail is designed to make a difference."
     },
 
     "buttons": {
@@ -30,13 +30,12 @@
 
     "experience": {
         "title": "Experience",
-        "duration": "Duration:",
         "months": "months",
-        "text1": "Creation and development of a dynamic web platform for Kreisel Events, designed to optimize event management. From the initial conceptualization in Adobe XD to the final programming with GULP, PUG, SCSS, and JavaScript, each stage focused on creating an efficient and adaptable tool to facilitate event planning and execution.",
-        "duration2": "Duration: 3 months - 2023",
-        "text2": "Design and development of the website for Giriga Fusion Food, aimed at highlighting its fusion cuisine proposal. Developed with technologies such as GULP, PUG, SCSS, and JavaScript. The result was a digital platform that combined functionality with an exceptional user experience, reflecting the passion and quality of its gastronomic offering.",
-        "duration3": "Duration: 3 months - 2023",
-        "text3": "Complete development of the website for Garcinstal Multiservices LTD, a multi-service housing company. The project began with an initial design in Adobe XD for interactive prototypes that guided both the client and the development process. Implementing web tools like GULP, PUG, SCSS, and JavaScript, including the creation of a distinctive logo that strengthened the brand's identity."
+        "text1": "Comprehensive development of the corporate website for Garcinstal, including the creation of an interactive prototype in Adobe XD to guide the process. Implemented with Gulp, Pug, SCSS, and JavaScript, along with a distinctive logo that reinforced the brand’s visual identity. The result was a functional, responsive site aligned with the company’s values.",
+        "text2": "Design and development of the website for Giriga Comida Fusión, with a visual approach to highlight its fusion cuisine concept. Built with Gulp, Pug, SCSS, and JavaScript, the platform combines an attractive design with smooth functionality, enhancing the brand’s identity and delivering an immersive user experience.",
+        "text3": "Development of the corporate website for Kreisel Events, focused on presenting events and services. Conversion of design prototypes into a responsive website, implemented with Pug, SCSS, JavaScript, and layout tools. Navigation was optimized and compatibility across different devices was ensured, improving the company’s digital presence.",
+        "text4": "Fullstack application for publishing and managing job offers and demands in the livestock sector of the Pyrenees. Developed with React (Vite) on the frontend and Node.js/Express + Prisma/Postgres on the backend, it integrates data validation, multilingual support, administrative email notifications, and an AdminJS management panel. Includes interactive map visualization and advanced filters, deployed on Railway to ensure an agile and scalable environment.",
+        "text5": "Dynamics 365 developer in Finance & Operations projects, contributing to modeling and extensions with X++ (tables, views, forms, classes, and validations). Development of interfaces with Power Apps (Canvas) connected to Dataverse and automation of business processes using Power Automate, ensuring data integrity and operational efficiency."
     },
 
     "skills": {
@@ -61,6 +60,7 @@
             "ascend": "Development of an interactive and responsive website implemented with React JS. The design features animated images using the Gsap JS library, as well as animated petals based on the Sakura JS library, specifically adapted for React. Fully compatible with all mobile devices, offering an elegant, visually appealing, and user-friendly interface."
         },
         "backend": {
+            "beep": "Development of a fullstack web application for publishing and managing job offers and demands in the livestock sector of the Pyrenees. Built with React (Vite) on the frontend and Node.js/Express with Prisma/PostgreSQL on the backend, it integrates data validation, multilingual support, and administrative email notifications. Includes an AdminJS panel for managing dynamic content and static texts. The platform provides advanced search, location-based filters, and interactive map visualization, deployed on Railway to ensure a fast, secure, and scalable environment.",
             "flaskFinance": "Development of a web application for managing a stock portfolio using Flask and an SQLite database. The application allows users to register, log in, buy and sell stocks, and view their transaction history and current portfolio status.",
             "birthdays": "Development of a web application for storing and managing birthdays, implemented with Flask and an SQLite database. The application enables users to add, view, and delete birthdays through an intuitive form interface.",
             "ajaxRequest": "Development of a web application for managing a list of superheroes using a MySQL database and PHP. The database can be created and imported via phpMyAdmin, allowing for efficient management of superhero data.",

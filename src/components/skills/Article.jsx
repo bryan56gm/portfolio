@@ -1,4 +1,3 @@
-import React from 'react'
 // ShortID
 import { generate as id } from 'shortid'
 // Styled Components
@@ -15,11 +14,14 @@ const Article = ({ title, images }) => {
     Python: '#3776AB',
     JavaScript: '#F7DF1E',
     NodeJS: '#339933',
+    Express: '#000000',
     Flask: '#000000',
     React: '#61DAFB',
     Gulp: '#DB4446',
     SQL: '#003B57',
     MySQL: '#4479A1',
+    PostgreSQL: '#336791',
+    Prisma: '#0C344B',
     Git: '#F05032',
     GitHub: '#0c0c0c',
     AdobeXD: '#FF61F6',

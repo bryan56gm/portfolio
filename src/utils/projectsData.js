@@ -50,12 +50,17 @@ export const getFrotendProjects = (projects) => [
 
 export const getBackendProjects = (projects) => [
   {
+    title: 'Beep',
+    text: projects?.backend.beep,
+    src: 'beep',
+    internetLink: 'https://beep-production-5723.up.railway.app/'
+  },
+  {
     title: 'Movie finder',
     text: projects?.backend.movieFinder,
     src: 'movies',
     githubLink: 'https://github.com/bryan56gm/movie-finder',
     internetLink: 'https://movie-finder-seven-swart.vercel.app/'
-
   },
   {
     title: 'Flask Finance',
@@ -82,6 +87,5 @@ export const getBackendProjects = (projects) => [
     src: 'trivia',
     githubLink: 'https://github.com/bryan56gm/trivia',
     internetLink: 'https://bryan56gm.github.io/trivia/'
-
   }
 ]
