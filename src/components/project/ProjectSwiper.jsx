@@ -1,4 +1,3 @@
-import React from 'react'
 // Styled Components
 import { ProjectTitle } from './Project.styled'
 // Components

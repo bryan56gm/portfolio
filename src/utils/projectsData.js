@@ -53,7 +53,7 @@ export const getBackendProjects = (projects) => [
     title: 'Beep',
     text: projects?.backend.beep,
     src: 'beep',
-    internetLink: 'https://beep-production-5723.up.railway.app/'
+    internetLink: 'https://ramaderia.fempirineu.cat/'
   },
   {
     title: 'Movie finder',
