@@ -67,7 +67,7 @@ export const getBackendProjects = (projects) => [
     text: projects?.backend.flaskFinance,
     src: 'finance',
     githubLink: 'https://github.com/bryan56gm/finance',
-    internetLink: 'https://finance-inky-iota.vercel.app/'
+    internetLink: 'https://flask-finance.up.railway.app/'
   },
   {
     title: 'Birthdays',
