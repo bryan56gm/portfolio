@@ -22,7 +22,7 @@ const ColorsStyled = css`
         position: relative;
     }
 
-    body.dark::after{
+    body.dark::before{
         content: "";
         position: absolute;
         inset: 0;

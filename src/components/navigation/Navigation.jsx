@@ -18,15 +18,15 @@ const Navigation = () => {
           </MenuLink>
         </MenuItem>
 
-        <MenuItem>
-          <MenuLink to='/about'>
-            <AboutIcon />
-          </MenuLink>
-        </MenuItem>
-
         <MenuItem className='projects'>
           <MenuLink to='/projects'>
             <ProjectIcon />
+          </MenuLink>
+        </MenuItem>
+
+        <MenuItem>
+          <MenuLink to='/about'>
+            <AboutIcon />
           </MenuLink>
         </MenuItem>
 

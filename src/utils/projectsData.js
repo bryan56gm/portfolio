@@ -56,13 +56,6 @@ export const getBackendProjects = (projects) => [
     internetLink: 'https://ramaderia.fempirineu.cat/'
   },
   {
-    title: 'Movie finder',
-    text: projects?.backend.movieFinder,
-    src: 'movies',
-    githubLink: 'https://github.com/bryan56gm/movie-finder',
-    internetLink: 'https://movie-finder-seven-swart.vercel.app/'
-  },
-  {
     title: 'Flask Finance',
     text: projects?.backend.flaskFinance,
     src: 'finance',
@@ -70,10 +63,11 @@ export const getBackendProjects = (projects) => [
     internetLink: 'https://flask-finance.up.railway.app/'
   },
   {
-    title: 'Birthdays',
-    text: projects?.backend.birthdays,
-    src: 'birthdays',
-    githubLink: 'https://github.com/bryan56gm/birthdays'
+    title: 'Movie finder',
+    text: projects?.backend.movieFinder,
+    src: 'movies',
+    githubLink: 'https://github.com/bryan56gm/movie-finder',
+    internetLink: 'https://movie-finder-seven-swart.vercel.app/'
   },
   {
     title: 'AJAX Request',
@@ -82,10 +76,10 @@ export const getBackendProjects = (projects) => [
     githubLink: 'https://github.com/bryan56gm/heroes'
   },
   {
-    title: 'Trivia',
-    text: projects?.backend.trivia,
-    src: 'trivia',
-    githubLink: 'https://github.com/bryan56gm/trivia',
-    internetLink: 'https://bryan56gm.github.io/trivia/'
+    title: 'Laravel Inventory Manager',
+    text: projects?.backend.laravelInventoryManager,
+    src: 'inventory-manager',
+    githubLink: 'https://github.com/bryan56gm/laravel-inventory-manager',
+    internetLink: 'https://laravel-inventory-manager-production.up.railway.app'
   }
 ]

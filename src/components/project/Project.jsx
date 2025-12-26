@@ -20,8 +20,8 @@ const Project = () => {
         <SectionTitleH1>{projects?.title}</SectionTitleH1>
 
         <ProjectContainer>
-          <ProjectSwiper className='project__frontend' title='Frontend' projects={frotendProjects} />
           <ProjectSwiper className='project__backend' title='Backend' projects={backendProjects} />
+          <ProjectSwiper className='project__frontend' title='Frontend' projects={frotendProjects} />
         </ProjectContainer>
       </Section>
 

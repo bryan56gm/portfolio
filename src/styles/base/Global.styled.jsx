@@ -1,7 +1,7 @@
 // Styled Component
 import { createGlobalStyle } from 'styled-components'
 // Config Styled Component
-import { ColorsStyled } from '../config/Colors.styled'
+import { ColorsStyled } from '../config/colors.styled'
 import { SizesStyled } from '../config/Sizes.styled'
 import { ScrollbarStyled } from '../config/Scrollbar.styled'
 
@@ -10,12 +10,12 @@ const GlobalStyles = createGlobalStyle`
     ${SizesStyled}
     ${ScrollbarStyled}
 
-    @font-face {
+    /* @font-face {
         font-family: 'Code7x5';
         src: url('/assets/fonts/Code7x5.ttf') format('truetype');
         font-weight: normal;
         font-style: normal;
-    }
+    } */
 
     html {
         scroll-behavior: smooth
