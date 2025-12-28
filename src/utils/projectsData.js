@@ -9,7 +9,8 @@ export const getFrotendProjects = (projects) => [
     title: 'Garcinstal Multiservices LTD',
     text: projects?.frontend.garcinstal,
     src: 'garcinstal',
-    internetLink: 'https://www.garcinstal.com/'
+    internetLink: 'https://www.garcinstal.com/',
+    prototypeLink: 'https://bryan56gm.github.io/adobe-prototype/'
   },
   {
     title: 'Giriga comida Fusión',

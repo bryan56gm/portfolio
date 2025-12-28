@@ -50,6 +50,10 @@
 
     "projects": {
         "title": "Projects",
+        "iconTitle": {
+            "info": "Information",
+            "prototype": "Prototype"
+        },
         "frontend": {
             "kreiselEvents": "Development of a website for a vibrant events company in Barcelona. Using Gulp, Pug, Sass, and JavaScript, a dynamic platform was created, featuring an image carousel, an interactive form, and a responsive design, offering an attractive and functional visual experience.",
             "garcinstal": "Development of a website for a multi-service housing company in London. Implemented with Gulp, Pug, Sass, and JavaScript, the site includes features such as language change and fullscreen mode. A prototype in Adobe XD was created to ensure a consistent and professional visual experience.",

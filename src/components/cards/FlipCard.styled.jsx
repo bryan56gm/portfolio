@@ -83,14 +83,15 @@ const FlipCardIcons = styled.div`
     position: absolute;
     top: 0;
     display: flex;
-    gap: 1rem;
+    align-items: center;
+    gap: .8rem;
     ${device.tablet`
         padding: 15px 20px;
     `}
 `
 
 const FlipCardIcon = styled.img`
-    width: 20px;
+    width: ${({ width = '20px' }) => width};
     cursor: pointer;
 `
 
